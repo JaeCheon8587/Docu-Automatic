@@ -3,3 +3,9 @@
 
 # Playwright MCP
 .playwright-mcp/
+
+# AI Article - 참조 데이터 (읽기 전용)
+AI Article/
+
+# BackData
+BackData/
