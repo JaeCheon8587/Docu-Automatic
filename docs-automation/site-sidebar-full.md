@@ -1,0 +1,938 @@
+- generic [ref=e2]:
+  - region "본문으로 건너뛰기":
+    - link "본문으로 건너뛰기" [ref=e257] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - navigation "메인" [ref=e258]:
+    - generic [ref=e259]:
+      - generic [ref=e260]:
+        - link "Mirero Logo SW-RCS" [ref=e261] [cursor=pointer]:
+          - /url: /
+          - img "Mirero Logo" [ref=e263]
+          - generic [ref=e264]: SW-RCS
+        - link "시작하기" [ref=e265] [cursor=pointer]:
+          - /url: /docs/intro
+        - link "애플리케이션" [ref=e266] [cursor=pointer]:
+          - /url: /docs/components/mircs-server/overview
+        - link "API" [ref=e267] [cursor=pointer]:
+          - /url: /docs/api/vnc-rfb
+        - link "개발 가이드" [ref=e268] [cursor=pointer]:
+          - /url: /docs/dev-guide/setup
+        - link "CI/CD" [ref=e269] [cursor=pointer]:
+          - /url: /docs/cicd/overview
+        - link "라이브 데모" [ref=e270] [cursor=pointer]:
+          - /url: /demo
+        - link "배포관리" [ref=e271] [cursor=pointer]:
+          - /url: /deploy
+      - generic [ref=e272]:
+        - link "GitLab(opens in new tab)" [ref=e273] [cursor=pointer]:
+          - /url: http://wish.mirero.co.kr/mirero/project/ros/ros-sw-rcs
+          - text: GitLab
+          - img "(opens in new tab)" [ref=e274]
+        - button "한국어" [ref=e277] [cursor=pointer]:
+          - img [ref=e278]
+          - text: 한국어
+        - button "어두운 모드와 밝은 모드 전환하기 (현재 system mode)" [ref=e281] [cursor=pointer]:
+          - img [ref=e282]
+        - generic [ref=e285]:
+          - textbox "Search" [ref=e286]
+          - generic:
+            - generic: ctrl
+            - generic: K
+  - generic [ref=e289]:
+    - complementary [ref=e290]:
+      - navigation "문서 사이드바" [ref=e293]:
+        - list [ref=e294]:
+          - listitem [ref=e295]:
+            - link "개요" [ref=e296] [cursor=pointer]:
+              - /url: /docs/intro
+              - generic "개요" [ref=e297]
+          - listitem [ref=e298]:
+            - generic [ref=e299]:
+              - link "시작하기" [ref=e300] [cursor=pointer]:
+                - /url: /docs/category/시작하기
+                - generic "시작하기" [ref=e301]
+              - button "사이드바 분류 '시작하기' 접기" [expanded] [ref=e828] [cursor=pointer]
+            - list [ref=e829]:
+              - listitem [ref=e830]:
+                - link "시스템 요구사항" [ref=e831] [cursor=pointer]:
+                  - /url: /docs/getting-started/requirements
+                  - generic "시스템 요구사항" [ref=e832]
+              - listitem [ref=e833]:
+                - link "설치 가이드" [ref=e834] [cursor=pointer]:
+                  - /url: /docs/getting-started/installation-guide
+                  - generic "설치 가이드" [ref=e835]
+              - listitem [ref=e836]:
+                - link "빠른 시작" [ref=e837] [cursor=pointer]:
+                  - /url: /docs/getting-started/quick-start
+                  - generic "빠른 시작" [ref=e838]
+          - listitem [ref=e303]:
+            - generic [ref=e304]:
+              - link "아키텍처" [ref=e305] [cursor=pointer]:
+                - /url: /docs/category/아키텍처
+                - generic "아키텍처" [ref=e306]
+              - button "사이드바 분류 '아키텍처' 접기" [expanded] [ref=e1283] [cursor=pointer]
+            - list [ref=e1284]:
+              - listitem [ref=e1285]:
+                - link "시스템 아키텍처" [ref=e1286] [cursor=pointer]:
+                  - /url: /docs/architecture/overview
+                  - generic "시스템 아키텍처" [ref=e1287]
+              - listitem [ref=e1288]:
+                - link "컴포넌트 다이어그램" [ref=e1289] [cursor=pointer]:
+                  - /url: /docs/architecture/component-diagram
+                  - generic "컴포넌트 다이어그램" [ref=e1290]
+              - listitem [ref=e1291]:
+                - link "데이터 플로우" [ref=e1292] [cursor=pointer]:
+                  - /url: /docs/architecture/data-flow
+                  - generic "데이터 플로우" [ref=e1293]
+          - listitem [ref=e308]:
+            - generic [ref=e309]:
+              - link "애플리케이션" [ref=e310] [cursor=pointer]:
+                - /url: /docs/category/애플리케이션
+                - generic "애플리케이션" [ref=e311]
+              - button "사이드바 분류 '애플리케이션' 접기" [expanded] [ref=e312] [cursor=pointer]
+            - list [ref=e313]:
+              - listitem [ref=e314]:
+                - generic [ref=e315]:
+                  - link "MiRcsServer" [ref=e316] [cursor=pointer]:
+                    - /url: /docs/category/mircsserver
+                    - generic "MiRcsServer" [ref=e317]
+                  - button "사이드바 분류 'MiRcsServer' 접기" [expanded] [ref=e318] [cursor=pointer]
+                - list [ref=e319]:
+                  - listitem [ref=e320]:
+                    - link "개요" [ref=e321] [cursor=pointer]:
+                      - /url: /docs/components/mircs-server/overview
+                      - generic "개요" [ref=e322]
+                  - listitem [ref=e323]:
+                    - link "기능 명세" [ref=e324] [cursor=pointer]:
+                      - /url: /docs/components/mircs-server/features
+                      - generic "기능 명세" [ref=e325]
+                  - listitem [ref=e326]:
+                    - link "기술 사양" [ref=e327] [cursor=pointer]:
+                      - /url: /docs/components/mircs-server/tech-spec
+                      - generic "기술 사양" [ref=e328]
+                  - listitem [ref=e329]:
+                    - link "설정" [ref=e330] [cursor=pointer]:
+                      - /url: /docs/components/mircs-server/configuration
+                      - generic "설정" [ref=e331]
+                  - listitem [ref=e332]:
+                    - link "서비스 가이드" [ref=e333] [cursor=pointer]:
+                      - /url: /docs/components/mircs-server/service-guide
+                      - generic "서비스 가이드" [ref=e334]
+                  - listitem [ref=e335]:
+                    - link "트러블슈팅" [ref=e336] [cursor=pointer]:
+                      - /url: /docs/components/mircs-server/troubleshooting
+                      - generic "트러블슈팅" [ref=e337]
+              - listitem [ref=e338]:
+                - generic [ref=e339]:
+                  - link "MiRcsClient" [ref=e340] [cursor=pointer]:
+                    - /url: /docs/category/mircsclient
+                    - generic "MiRcsClient" [ref=e341]
+                  - button "사이드바 분류 'MiRcsClient' 접기" [expanded] [ref=e1294] [cursor=pointer]
+                - list [ref=e1295]:
+                  - listitem [ref=e1296]:
+                    - link "개요" [ref=e1297] [cursor=pointer]:
+                      - /url: /docs/components/mircs-client/overview
+                      - generic "개요" [ref=e1298]
+                  - listitem [ref=e1299]:
+                    - link "기능 명세" [ref=e1300] [cursor=pointer]:
+                      - /url: /docs/components/mircs-client/features
+                      - generic "기능 명세" [ref=e1301]
+                  - listitem [ref=e1302]:
+                    - link "사용 방법" [ref=e1303] [cursor=pointer]:
+                      - /url: /docs/components/mircs-client/usage
+                      - generic "사용 방법" [ref=e1304]
+              - listitem [ref=e343]:
+                - generic [ref=e344]:
+                  - link "MiVnc2RtspServer" [ref=e345] [cursor=pointer]:
+                    - /url: /docs/category/mivnc2rtspserver
+                    - generic "MiVnc2RtspServer" [ref=e346]
+                  - button "사이드바 분류 'MiVnc2RtspServer' 접기" [expanded] [ref=e1305] [cursor=pointer]
+                - list [ref=e1306]:
+                  - listitem [ref=e1307]:
+                    - link "개요" [ref=e1308] [cursor=pointer]:
+                      - /url: /docs/components/mircs-vnc2rtsp/overview
+                      - generic "개요" [ref=e1309]
+                  - listitem [ref=e1310]:
+                    - link "기능 명세" [ref=e1311] [cursor=pointer]:
+                      - /url: /docs/components/mircs-vnc2rtsp/features
+                      - generic "기능 명세" [ref=e1312]
+                  - listitem [ref=e1313]:
+                    - link "기술 사양" [ref=e1314] [cursor=pointer]:
+                      - /url: /docs/components/mircs-vnc2rtsp/tech-spec
+                      - generic "기술 사양" [ref=e1315]
+                  - listitem [ref=e1316]:
+                    - link "인코더 설정" [ref=e1317] [cursor=pointer]:
+                      - /url: /docs/components/mircs-vnc2rtsp/configuration
+                      - generic "인코더 설정" [ref=e1318]
+                  - listitem [ref=e1319]:
+                    - link "스트리밍 프로토콜" [ref=e1320] [cursor=pointer]:
+                      - /url: /docs/components/mircs-vnc2rtsp/streaming
+                      - generic "스트리밍 프로토콜" [ref=e1321]
+              - listitem [ref=e348]:
+                - generic [ref=e349]:
+                  - link "MiRcsUpdater" [ref=e350] [cursor=pointer]:
+                    - /url: /docs/category/mircsupdater
+                    - generic "MiRcsUpdater" [ref=e351]
+                  - button "사이드바 분류 'MiRcsUpdater' 접기" [expanded] [ref=e1322] [cursor=pointer]
+                - list [ref=e1323]:
+                  - listitem [ref=e1324]:
+                    - link "개요" [ref=e1325] [cursor=pointer]:
+                      - /url: /docs/components/mircs-updater/overview
+                      - generic "개요" [ref=e1326]
+                  - listitem [ref=e1327]:
+                    - link "기능 명세" [ref=e1328] [cursor=pointer]:
+                      - /url: /docs/components/mircs-updater/features
+                      - generic "기능 명세" [ref=e1329]
+                  - listitem [ref=e1330]:
+                    - link "제품 요구사항" [ref=e1331] [cursor=pointer]:
+                      - /url: /docs/components/mircs-updater/requirements
+                      - generic "제품 요구사항" [ref=e1332]
+                  - listitem [ref=e1333]:
+                    - link "기술 사양" [ref=e1334] [cursor=pointer]:
+                      - /url: /docs/components/mircs-updater/tech-spec
+                      - generic "기술 사양" [ref=e1335]
+                  - listitem [ref=e1336]:
+                    - link "업데이트 플로우" [ref=e1337] [cursor=pointer]:
+                      - /url: /docs/components/mircs-updater/update-flow
+                      - generic "업데이트 플로우" [ref=e1338]
+                  - listitem [ref=e1339]:
+                    - link "데이터 모델" [ref=e1340] [cursor=pointer]:
+                      - /url: /docs/components/mircs-updater/data-models
+                      - generic "데이터 모델" [ref=e1341]
+              - listitem [ref=e353]:
+                - generic [ref=e354]:
+                  - link "MiVncMcpServer" [ref=e355] [cursor=pointer]:
+                    - /url: /docs/category/mivncmcpserver
+                    - generic "MiVncMcpServer" [ref=e356]
+                  - button "사이드바 분류 'MiVncMcpServer' 접기" [expanded] [ref=e1342] [cursor=pointer]
+                - list [ref=e1343]:
+                  - listitem [ref=e1344]:
+                    - link "개요" [ref=e1345] [cursor=pointer]:
+                      - /url: /docs/components/mi-vnc-mcp-server/overview
+                      - generic "개요" [ref=e1346]
+                  - listitem [ref=e1347]:
+                    - link "기능 명세" [ref=e1348] [cursor=pointer]:
+                      - /url: /docs/components/mi-vnc-mcp-server/features
+                      - generic "기능 명세" [ref=e1349]
+                  - listitem [ref=e1350]:
+                    - link "기술 사양" [ref=e1351] [cursor=pointer]:
+                      - /url: /docs/components/mi-vnc-mcp-server/tech-spec
+                      - generic "기술 사양" [ref=e1352]
+                  - listitem [ref=e1353]:
+                    - link "AI 도구 통합" [ref=e1354] [cursor=pointer]:
+                      - /url: /docs/components/mi-vnc-mcp-server/integration
+                      - generic "AI 도구 통합" [ref=e1355]
+              - listitem [ref=e358]:
+                - generic [ref=e359]:
+                  - link "MiVncManagerMcpServer" [ref=e360] [cursor=pointer]:
+                    - /url: /docs/category/mivncmanagermcpserver
+                    - generic "MiVncManagerMcpServer" [ref=e361]
+                  - button "사이드바 분류 'MiVncManagerMcpServer' 접기" [expanded] [ref=e1356] [cursor=pointer]
+                - list [ref=e1357]:
+                  - listitem [ref=e1358]:
+                    - link "개요" [ref=e1359] [cursor=pointer]:
+                      - /url: /docs/components/mi-vnc-manager-mcp-server/overview
+                      - generic "개요" [ref=e1360]
+                  - listitem [ref=e1361]:
+                    - link "기능 명세" [ref=e1362] [cursor=pointer]:
+                      - /url: /docs/components/mi-vnc-manager-mcp-server/features
+                      - generic "기능 명세" [ref=e1363]
+                  - listitem [ref=e1364]:
+                    - link "기술 사양" [ref=e1365] [cursor=pointer]:
+                      - /url: /docs/components/mi-vnc-manager-mcp-server/tech-spec
+                      - generic "기술 사양" [ref=e1366]
+                  - listitem [ref=e1367]:
+                    - link "AI 도구 통합" [ref=e1368] [cursor=pointer]:
+                      - /url: /docs/components/mi-vnc-manager-mcp-server/integration
+                      - generic "AI 도구 통합" [ref=e1369]
+          - listitem [ref=e363]:
+            - generic [ref=e364]:
+              - link "개발 가이드" [ref=e365] [cursor=pointer]:
+                - /url: /docs/category/개발-가이드
+                - generic "개발 가이드" [ref=e366]
+              - button "사이드바 분류 '개발 가이드' 접기" [expanded] [ref=e1370] [cursor=pointer]
+            - list [ref=e1371]:
+              - listitem [ref=e1372]:
+                - link "개발 환경 설정" [ref=e1373] [cursor=pointer]:
+                  - /url: /docs/dev-guide/setup
+                  - generic "개발 환경 설정" [ref=e1374]
+              - listitem [ref=e1375]:
+                - link "빌드 방법" [ref=e1376] [cursor=pointer]:
+                  - /url: /docs/dev-guide/build
+                  - generic "빌드 방법" [ref=e1377]
+              - listitem [ref=e1378]:
+                - link "커밋 메시지 컨벤션" [ref=e1379] [cursor=pointer]:
+                  - /url: /docs/dev-guide/commit-convention
+                  - generic "커밋 메시지 컨벤션" [ref=e1380]
+              - listitem [ref=e1381]:
+                - link "브랜치 전략" [ref=e1382] [cursor=pointer]:
+                  - /url: /docs/dev-guide/branching-strategy
+                  - generic "브랜치 전략" [ref=e1383]
+              - listitem [ref=e1384]:
+                - link "코딩 컨벤션" [ref=e1385] [cursor=pointer]:
+                  - /url: /docs/dev-guide/conventions
+                  - generic "코딩 컨벤션" [ref=e1386]
+              - listitem [ref=e1387]:
+                - link "문서 작성 가이드" [ref=e1388] [cursor=pointer]:
+                  - /url: /docs/dev-guide/writing-guide
+                  - generic "문서 작성 가이드" [ref=e1389]
+          - listitem [ref=e368]:
+            - generic [ref=e369]:
+              - link "CI/CD" [ref=e370] [cursor=pointer]:
+                - /url: /docs/category/cicd
+                - generic "CI/CD" [ref=e371]
+              - button "사이드바 분류 'CI/CD' 접기" [expanded] [ref=e1390] [cursor=pointer]
+            - list [ref=e1391]:
+              - listitem [ref=e1392]:
+                - link "파이프라인 개요" [ref=e1393] [cursor=pointer]:
+                  - /url: /docs/cicd/overview
+                  - generic "파이프라인 개요" [ref=e1394]
+              - listitem [ref=e1395]:
+                - link "Windows 빌드" [ref=e1396] [cursor=pointer]:
+                  - /url: /docs/cicd/windows-build
+                  - generic "Windows 빌드" [ref=e1397]
+              - listitem [ref=e1398]:
+                - link "Linux 빌드" [ref=e1399] [cursor=pointer]:
+                  - /url: /docs/cicd/linux-build
+                  - generic "Linux 빌드" [ref=e1400]
+              - listitem [ref=e1401]:
+                - link "패키징 및 릴리스" [ref=e1402] [cursor=pointer]:
+                  - /url: /docs/cicd/packaging
+                  - generic "패키징 및 릴리스" [ref=e1403]
+              - listitem [ref=e1404]:
+                - link "Docker 레지스트리" [ref=e1405] [cursor=pointer]:
+                  - /url: /docs/cicd/docker-registry
+                  - generic "Docker 레지스트리" [ref=e1406]
+              - listitem [ref=e1407]:
+                - link "문서 자동화" [ref=e1408] [cursor=pointer]:
+                  - /url: /docs/cicd/docs-automation
+                  - generic "문서 자동화" [ref=e1409]
+          - listitem [ref=e373]:
+            - generic [ref=e374]:
+              - link "API & 프로토콜" [ref=e375] [cursor=pointer]:
+                - /url: /docs/category/api--프로토콜
+                - generic "API & 프로토콜" [ref=e376]
+              - button "사이드바 분류 'API & 프로토콜' 접기" [expanded] [ref=e1410] [cursor=pointer]
+            - list [ref=e1411]:
+              - listitem [ref=e1412]:
+                - link "VNC/RFB 프로토콜" [ref=e1413] [cursor=pointer]:
+                  - /url: /docs/api/vnc-rfb
+                  - generic "VNC/RFB 프로토콜" [ref=e1414]
+              - listitem [ref=e1415]:
+                - link "RTSP 스트리밍" [ref=e1416] [cursor=pointer]:
+                  - /url: /docs/api/rtsp
+                  - generic "RTSP 스트리밍" [ref=e1417]
+              - listitem [ref=e1418]:
+                - link "ONVIF 통합" [ref=e1419] [cursor=pointer]:
+                  - /url: /docs/api/onvif
+                  - generic "ONVIF 통합" [ref=e1420]
+              - listitem [ref=e1421]:
+                - link "hawkBit DDI API" [ref=e1422] [cursor=pointer]:
+                  - /url: /docs/api/hawkbit-ddi
+                  - generic "hawkBit DDI API" [ref=e1423]
+          - listitem [ref=e378]:
+            - generic [ref=e379]:
+              - link "라이브러리" [ref=e380] [cursor=pointer]:
+                - /url: /docs/category/라이브러리
+                - generic "라이브러리" [ref=e381]
+              - button "사이드바 분류 '라이브러리' 접기" [expanded] [ref=e1424] [cursor=pointer]
+            - list [ref=e1425]:
+              - listitem [ref=e1426]:
+                - button "Utility 레이어" [ref=e1428] [cursor=pointer]:
+                  - generic "Utility 레이어" [ref=e1429]
+              - listitem [ref=e1430]:
+                - button "Engine 레이어" [ref=e1432] [cursor=pointer]:
+                  - generic "Engine 레이어" [ref=e1433]
+              - listitem [ref=e1434]:
+                - button "Infra 레이어" [ref=e1436] [cursor=pointer]:
+                  - generic "Infra 레이어" [ref=e1437]
+              - listitem [ref=e1438]:
+                - generic [ref=e1439]:
+                  - link "3rd Party" [ref=e1440] [cursor=pointer]:
+                    - /url: /docs/category/3rd-party
+                    - generic "3rd Party" [ref=e1441]
+                  - button "사이드바 분류 '3rd Party' 펼치기" [ref=e1442] [cursor=pointer]
+          - listitem [ref=e383]:
+            - generic [ref=e384]:
+              - link "참조" [ref=e385] [cursor=pointer]:
+                - /url: /docs/category/참조
+                - generic "참조" [ref=e386]
+              - button "사이드바 분류 '참조' 접기" [expanded] [ref=e1443] [cursor=pointer]
+            - list [ref=e1444]:
+              - listitem [ref=e1445]:
+                - link "네트워크 포트 참조" [ref=e1446] [cursor=pointer]:
+                  - /url: /docs/reference/network-ports
+                  - generic "네트워크 포트 참조" [ref=e1447]
+    - main [ref=e388]:
+      - generic [ref=e839]:
+        - generic [ref=e841]:
+          - article [ref=e842]:
+            - navigation "탐색 경로" [ref=e843]:
+              - list [ref=e844]:
+                - listitem [ref=e845]:
+                  - link "홈" [ref=e846] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e847]
+                - listitem [ref=e849]:
+                  - link "시작하기" [ref=e850] [cursor=pointer]:
+                    - /url: /docs/category/시작하기
+                - listitem [ref=e851]:
+                  - generic [ref=e852]: 시스템 요구사항
+            - generic [ref=e853]:
+              - heading "시스템 요구사항" [level=1] [ref=e855]
+              - paragraph [ref=e856]: Sw-RCS 설치 및 실행에 필요한 시스템 요구사항입니다.
+              - heading "실행 환경실행 환경에 대한 직접 링크" [level=2] [ref=e857]:
+                - text: 실행 환경
+                - link "실행 환경에 대한 직접 링크" [ref=e858] [cursor=pointer]:
+                  - /url: "#실행-환경"
+                  - text: "#"
+              - heading "MiRcsServer (VNC 서버)MiRcsServer (VNC 서버)에 대한 직접 링크" [level=3] [ref=e859]:
+                - text: MiRcsServer (VNC 서버)
+                - link "MiRcsServer (VNC 서버)에 대한 직접 링크" [ref=e860] [cursor=pointer]:
+                  - /url: "#mircsserver-vnc-서버"
+                  - text: "#"
+              - paragraph [ref=e861]: MiRcsServer는 Windows 서비스 또는 Linux 데몬으로 동작하는 VNC 서버입니다.
+              - table [ref=e862]:
+                - rowgroup [ref=e863]:
+                  - row "항목 Windows x86 (레거시) Windows x64 Linux x64" [ref=e864]:
+                    - columnheader "항목" [ref=e865]
+                    - columnheader "Windows x86 (레거시)" [ref=e866]
+                    - columnheader "Windows x64" [ref=e867]
+                    - columnheader "Linux x64" [ref=e868]
+                - rowgroup [ref=e869]:
+                  - row "OS Windows NT 4.0 이상 Windows 10/11, Server 2016+ Ubuntu 20.04, 24.04" [ref=e870]:
+                    - cell "OS" [ref=e871]:
+                      - strong [ref=e872]: OS
+                    - cell "Windows NT 4.0 이상" [ref=e873]
+                    - cell "Windows 10/11, Server 2016+" [ref=e874]
+                    - cell "Ubuntu 20.04, 24.04" [ref=e875]
+                  - row "CPU Pentium 이상 듀얼코어 (x64) 듀얼코어" [ref=e876]:
+                    - cell "CPU" [ref=e877]:
+                      - strong [ref=e878]: CPU
+                    - cell "Pentium 이상" [ref=e879]
+                    - cell "듀얼코어 (x64)" [ref=e880]
+                    - cell "듀얼코어" [ref=e881]
+                  - row "메모리 256 MB 이상 1 GB 이상 1 GB 이상" [ref=e882]:
+                    - cell "메모리" [ref=e883]:
+                      - strong [ref=e884]: 메모리
+                    - cell "256 MB 이상" [ref=e885]
+                    - cell "1 GB 이상" [ref=e886]
+                    - cell "1 GB 이상" [ref=e887]
+                  - row "권한 관리자 권한 관리자 권한 root 또는 sudo" [ref=e888]:
+                    - cell "권한" [ref=e889]:
+                      - strong [ref=e890]: 권한
+                    - cell "관리자 권한" [ref=e891]
+                    - cell "관리자 권한" [ref=e892]
+                    - cell "root 또는 sudo" [ref=e893]
+                  - row "네트워크 TCP 포트 9000 TCP 포트 9000 TCP 포트 9000" [ref=e894]:
+                    - cell "네트워크" [ref=e895]:
+                      - strong [ref=e896]: 네트워크
+                    - cell "TCP 포트 9000" [ref=e897]
+                    - cell "TCP 포트 9000" [ref=e898]
+                    - cell "TCP 포트 9000" [ref=e899]
+                  - row "빌드 도구셋 v141_xp v141 CMake + GCC" [ref=e900]:
+                    - cell "빌드 도구셋" [ref=e901]:
+                      - strong [ref=e902]: 빌드 도구셋
+                    - cell "v141_xp" [ref=e903]
+                    - cell "v141" [ref=e904]
+                    - cell "CMake + GCC" [ref=e905]
+              - generic [ref=e906]:
+                - generic [ref=e907]:
+                  - img [ref=e909]
+                  - text: x86 레거시 빌드
+                - paragraph [ref=e912]:
+                  - text: x86 빌드는
+                  - strong [ref=e913]: v141_xp
+                  - text: 플랫폼 도구셋을 사용하여 Windows NT 4.0부터 최신 Windows까지 호환됩니다. 구형 임베디드 시스템, 키오스크, POS 단말기 등 레거시 환경에 적합합니다.
+              - heading "MiRcsClient (VNC 클라이언트)MiRcsClient (VNC 클라이언트)에 대한 직접 링크" [level=3] [ref=e914]:
+                - text: MiRcsClient (VNC 클라이언트)
+                - link "MiRcsClient (VNC 클라이언트)에 대한 직접 링크" [ref=e915] [cursor=pointer]:
+                  - /url: "#mircsclient-vnc-클라이언트"
+                  - text: "#"
+              - table [ref=e916]:
+                - rowgroup [ref=e917]:
+                  - row "항목 Windows x86 (레거시) Windows x64" [ref=e918]:
+                    - columnheader "항목" [ref=e919]
+                    - columnheader "Windows x86 (레거시)" [ref=e920]
+                    - columnheader "Windows x64" [ref=e921]
+                - rowgroup [ref=e922]:
+                  - row "OS Windows NT 4.0 이상 Windows 10/11" [ref=e923]:
+                    - cell "OS" [ref=e924]:
+                      - strong [ref=e925]: OS
+                    - cell "Windows NT 4.0 이상" [ref=e926]
+                    - cell "Windows 10/11" [ref=e927]
+                  - row "아키텍처 x86 x64" [ref=e928]:
+                    - cell "아키텍처" [ref=e929]:
+                      - strong [ref=e930]: 아키텍처
+                    - cell "x86" [ref=e931]
+                    - cell "x64" [ref=e932]
+                  - row "디스플레이 GDI DirectX 지원 그래픽" [ref=e933]:
+                    - cell "디스플레이" [ref=e934]:
+                      - strong [ref=e935]: 디스플레이
+                    - cell "GDI" [ref=e936]
+                    - cell "DirectX 지원 그래픽" [ref=e937]
+              - heading "MiVnc2RtspServer (스트리밍 브릿지)MiVnc2RtspServer (스트리밍 브릿지)에 대한 직접 링크" [level=3] [ref=e938]:
+                - text: MiVnc2RtspServer (스트리밍 브릿지)
+                - link "MiVnc2RtspServer (스트리밍 브릿지)에 대한 직접 링크" [ref=e939] [cursor=pointer]:
+                  - /url: "#mivnc2rtspserver-스트리밍-브릿지"
+                  - text: "#"
+              - paragraph [ref=e940]: VNC 화면을 H.264 RTSP 스트림으로 변환하는 서비스입니다.
+              - table [ref=e941]:
+                - rowgroup [ref=e942]:
+                  - row "항목 Windows Linux" [ref=e943]:
+                    - columnheader "항목" [ref=e944]
+                    - columnheader "Windows" [ref=e945]
+                    - columnheader "Linux" [ref=e946]
+                - rowgroup [ref=e947]:
+                  - row "OS Windows 10/11, Server 2016+ Ubuntu 20.04, 24.04" [ref=e948]:
+                    - cell "OS" [ref=e949]:
+                      - strong [ref=e950]: OS
+                    - cell "Windows 10/11, Server 2016+" [ref=e951]
+                    - cell "Ubuntu 20.04, 24.04" [ref=e952]
+                  - row "아키텍처 x86, x64 x64" [ref=e953]:
+                    - cell "아키텍처" [ref=e954]:
+                      - strong [ref=e955]: 아키텍처
+                    - cell "x86, x64" [ref=e956]
+                    - cell "x64" [ref=e957]
+                  - row "네트워크 TCP 9000 (VNC 입력), 8554 (RTSP 출력) TCP 9000 (VNC 입력), 8554 (RTSP 출력)" [ref=e958]:
+                    - cell "네트워크" [ref=e959]:
+                      - strong [ref=e960]: 네트워크
+                    - cell "TCP 9000 (VNC 입력), 8554 (RTSP 출력)" [ref=e961]
+                    - cell "TCP 9000 (VNC 입력), 8554 (RTSP 출력)" [ref=e962]
+                  - row "코덱 H.264 인코더 (FFmpeg) H.264 인코더 (FFmpeg)" [ref=e963]:
+                    - cell "코덱" [ref=e964]:
+                      - strong [ref=e965]: 코덱
+                    - cell "H.264 인코더 (FFmpeg)" [ref=e966]
+                    - cell "H.264 인코더 (FFmpeg)" [ref=e967]
+              - heading "MiRcsUpdater (업데이트 서비스)MiRcsUpdater (업데이트 서비스)에 대한 직접 링크" [level=3] [ref=e968]:
+                - text: MiRcsUpdater (업데이트 서비스)
+                - link "MiRcsUpdater (업데이트 서비스)에 대한 직접 링크" [ref=e969] [cursor=pointer]:
+                  - /url: "#mircsupdater-업데이트-서비스"
+                  - text: "#"
+              - paragraph [ref=e970]: hawkBit DDI API를 통한 자동 소프트웨어 업데이트 서비스입니다.
+              - table [ref=e971]:
+                - rowgroup [ref=e972]:
+                  - row "항목 요구사항" [ref=e973]:
+                    - columnheader "항목" [ref=e974]
+                    - columnheader "요구사항" [ref=e975]
+                - rowgroup [ref=e976]:
+                  - row "OS Windows 10/11" [ref=e977]:
+                    - cell "OS" [ref=e978]:
+                      - strong [ref=e979]: OS
+                    - cell "Windows 10/11" [ref=e980]
+                  - row "아키텍처 x86, x64" [ref=e981]:
+                    - cell "아키텍처" [ref=e982]:
+                      - strong [ref=e983]: 아키텍처
+                    - cell "x86, x64" [ref=e984]
+                  - row "네트워크 HTTPS (hawkBit DDI 서버 접속)" [ref=e985]:
+                    - cell "네트워크" [ref=e986]:
+                      - strong [ref=e987]: 네트워크
+                    - cell "HTTPS (hawkBit DDI 서버 접속)" [ref=e988]
+                  - row "권한 관리자 권한 (서비스 업데이트)" [ref=e989]:
+                    - cell "권한" [ref=e990]:
+                      - strong [ref=e991]: 권한
+                    - cell "관리자 권한 (서비스 업데이트)" [ref=e992]
+              - generic [ref=e993]:
+                - generic [ref=e994]:
+                  - img [ref=e996]
+                  - text: MiRcsUpdater 권한
+                - paragraph [ref=e999]:
+                  - text: MiRcsUpdater는 대상 서비스(MiRcsServer)를 중지/시작하고 바이너리를 교체해야 하므로
+                  - strong [ref=e1000]: 관리자 권한
+                  - text: 이 필수입니다. 업데이트 실패 시 자동 롤백 기능이 제공됩니다.
+              - heading "MiVncMcpServer / MiVncManagerMcpServer (AI MCP 서버)MiVncMcpServer / MiVncManagerMcpServer (AI MCP 서버)에 대한 직접 링크" [level=3] [ref=e1001]:
+                - text: MiVncMcpServer / MiVncManagerMcpServer (AI MCP 서버)
+                - link "MiVncMcpServer / MiVncManagerMcpServer (AI MCP 서버)에 대한 직접 링크" [ref=e1002] [cursor=pointer]:
+                  - /url: "#mivncmcpserver--mivncmanagermcpserver-ai-mcp-서버"
+                  - text: "#"
+              - paragraph [ref=e1003]: Claude Desktop 등 AI 에이전트와 연동하기 위한 서버입니다.
+              - table [ref=e1004]:
+                - rowgroup [ref=e1005]:
+                  - row "항목 요구사항" [ref=e1006]:
+                    - columnheader "항목" [ref=e1007]
+                    - columnheader "요구사항" [ref=e1008]
+                - rowgroup [ref=e1009]:
+                  - row "OS Windows 10/11, Server 2016+" [ref=e1010]:
+                    - cell "OS" [ref=e1011]:
+                      - strong [ref=e1012]: OS
+                    - cell "Windows 10/11, Server 2016+" [ref=e1013]
+                  - row "아키텍처 x64" [ref=e1014]:
+                    - cell "아키텍처" [ref=e1015]:
+                      - strong [ref=e1016]: 아키텍처
+                    - cell "x64" [ref=e1017]
+                  - row "네트워크 TCP 8888 (SSE 모드), Stdio (로컬 모드)" [ref=e1018]:
+                    - cell "네트워크" [ref=e1019]:
+                      - strong [ref=e1020]: 네트워크
+                    - cell "TCP 8888 (SSE 모드), Stdio (로컬 모드)" [ref=e1021]
+                  - row "실행 환경 콘솔 또는 서비스" [ref=e1022]:
+                    - cell "실행 환경" [ref=e1023]:
+                      - strong [ref=e1024]: 실행 환경
+                    - cell "콘솔 또는 서비스" [ref=e1025]
+              - heading "개발 환경개발 환경에 대한 직접 링크" [level=2] [ref=e1026]:
+                - text: 개발 환경
+                - link "개발 환경에 대한 직접 링크" [ref=e1027] [cursor=pointer]:
+                  - /url: "#개발-환경"
+                  - text: "#"
+              - heading "Windows 빌드Windows 빌드에 대한 직접 링크" [level=3] [ref=e1028]:
+                - text: Windows 빌드
+                - link "Windows 빌드에 대한 직접 링크" [ref=e1029] [cursor=pointer]:
+                  - /url: "#windows-빌드"
+                  - text: "#"
+              - table [ref=e1030]:
+                - rowgroup [ref=e1031]:
+                  - row "항목 요구사항 비고" [ref=e1032]:
+                    - columnheader "항목" [ref=e1033]
+                    - columnheader "요구사항" [ref=e1034]
+                    - columnheader "비고" [ref=e1035]
+                - rowgroup [ref=e1036]:
+                  - row "IDE Visual Studio 2017 이상 C++ 데스크탑 개발 워크로드 필요" [ref=e1037]:
+                    - cell "IDE" [ref=e1038]:
+                      - strong [ref=e1039]: IDE
+                    - cell "Visual Studio 2017 이상" [ref=e1040]
+                    - cell "C++ 데스크탑 개발 워크로드 필요" [ref=e1041]
+                  - row "SDK Windows SDK 10.0 Visual Studio와 함께 설치" [ref=e1042]:
+                    - cell "SDK" [ref=e1043]:
+                      - strong [ref=e1044]: SDK
+                    - cell "Windows SDK 10.0" [ref=e1045]
+                    - cell "Visual Studio와 함께 설치" [ref=e1046]
+                  - row "빌드 도구 MSBuild Visual Studio 포함" [ref=e1047]:
+                    - cell "빌드 도구" [ref=e1048]:
+                      - strong [ref=e1049]: 빌드 도구
+                    - cell "MSBuild" [ref=e1050]
+                    - cell "Visual Studio 포함" [ref=e1051]
+                  - row "패키지 관리 NuGet Visual Studio 포함" [ref=e1052]:
+                    - cell "패키지 관리" [ref=e1053]:
+                      - strong [ref=e1054]: 패키지 관리
+                    - cell "NuGet" [ref=e1055]
+                    - cell "Visual Studio 포함" [ref=e1056]
+                  - row "인스톨러 Inno Setup 5, WiX Toolset 설치 패키지 생성" [ref=e1057]:
+                    - cell "인스톨러" [ref=e1058]:
+                      - strong [ref=e1059]: 인스톨러
+                    - cell "Inno Setup 5, WiX Toolset" [ref=e1060]
+                    - cell "설치 패키지 생성" [ref=e1061]
+              - heading "Linux 빌드Linux 빌드에 대한 직접 링크" [level=3] [ref=e1062]:
+                - text: Linux 빌드
+                - link "Linux 빌드에 대한 직접 링크" [ref=e1063] [cursor=pointer]:
+                  - /url: "#linux-빌드"
+                  - text: "#"
+              - table [ref=e1064]:
+                - rowgroup [ref=e1065]:
+                  - row "항목 요구사항 비고" [ref=e1066]:
+                    - columnheader "항목" [ref=e1067]
+                    - columnheader "요구사항" [ref=e1068]
+                    - columnheader "비고" [ref=e1069]
+                - rowgroup [ref=e1070]:
+                  - row "Docker Docker Engine 20.10+ Docker Desktop 또는 Docker CE" [ref=e1071]:
+                    - cell "Docker" [ref=e1072]:
+                      - strong [ref=e1073]: Docker
+                    - cell "Docker Engine 20.10+" [ref=e1074]
+                    - cell "Docker Desktop 또는 Docker CE" [ref=e1075]
+                  - row "빌드 스크립트 docker_build.bat Windows에서 Docker 빌드 실행" [ref=e1076]:
+                    - cell "빌드 스크립트" [ref=e1077]:
+                      - strong [ref=e1078]: 빌드 스크립트
+                    - cell "docker_build.bat" [ref=e1079]:
+                      - code [ref=e1080]: docker_build.bat
+                    - cell "Windows에서 Docker 빌드 실행" [ref=e1081]
+                  - row "대상 이미지 Ubuntu 20.04, 24.04 기반 멀티 버전 빌드" [ref=e1082]:
+                    - cell "대상 이미지" [ref=e1083]:
+                      - strong [ref=e1084]: 대상 이미지
+                    - cell "Ubuntu 20.04, 24.04 기반" [ref=e1085]
+                    - cell "멀티 버전 빌드" [ref=e1086]
+              - generic [ref=e1087]:
+                - generic [ref=e1088]:
+                  - img [ref=e1090]
+                  - text: Docker 기반 Linux 빌드
+                - paragraph [ref=e1093]:
+                  - text: Linux 빌드는 Windows 호스트에서 Docker를 통해 수행됩니다.
+                  - code [ref=e1094]: docker_build.bat
+                  - text: 스크립트가 Ubuntu 기반 컨테이너에서 CMake + GCC 빌드를 자동으로 실행합니다.
+              - heading "문서 빌드문서 빌드에 대한 직접 링크" [level=3] [ref=e1095]:
+                - text: 문서 빌드
+                - link "문서 빌드에 대한 직접 링크" [ref=e1096] [cursor=pointer]:
+                  - /url: "#문서-빌드"
+                  - text: "#"
+              - table [ref=e1097]:
+                - rowgroup [ref=e1098]:
+                  - row "항목 요구사항" [ref=e1099]:
+                    - columnheader "항목" [ref=e1100]
+                    - columnheader "요구사항" [ref=e1101]
+                - rowgroup [ref=e1102]:
+                  - row "Node.js 20.0 이상" [ref=e1103]:
+                    - cell "Node.js" [ref=e1104]:
+                      - strong [ref=e1105]: Node.js
+                    - cell "20.0 이상" [ref=e1106]
+                  - row "패키지 관리자 npm" [ref=e1107]:
+                    - cell "패키지 관리자" [ref=e1108]:
+                      - strong [ref=e1109]: 패키지 관리자
+                    - cell "npm" [ref=e1110]
+                  - row "프레임워크 Docusaurus 3.9" [ref=e1111]:
+                    - cell "프레임워크" [ref=e1112]:
+                      - strong [ref=e1113]: 프레임워크
+                    - cell "Docusaurus 3.9" [ref=e1114]
+              - heading "네트워크 포트네트워크 포트에 대한 직접 링크" [level=2] [ref=e1115]:
+                - text: 네트워크 포트
+                - link "네트워크 포트에 대한 직접 링크" [ref=e1116] [cursor=pointer]:
+                  - /url: "#네트워크-포트"
+                  - text: "#"
+              - document [ref=e1449]:
+                - generic [ref=e1453]:
+                  - paragraph [ref=e1461]: Sw-RCS 포트 구성
+                  - generic [ref=e1462]:
+                    - paragraph [ref=e1469]:
+                      - text: TCP 9000
+                      - text: VNC/RFB
+                    - paragraph [ref=e1476]:
+                      - text: TCP 8554
+                      - text: RTSP
+                    - paragraph [ref=e1483]:
+                      - text: TCP 10000
+                      - text: ONVIF
+                    - paragraph [ref=e1490]:
+                      - text: TCP 443
+                      - text: hawkBit
+                    - paragraph [ref=e1497]:
+                      - text: TCP 8080
+                      - text: 문서 사이트
+                    - paragraph [ref=e1504]:
+                      - text: TCP 8888
+                      - text: MCP/SSE
+              - table [ref=e1117]:
+                - rowgroup [ref=e1118]:
+                  - row "포트 프로토콜 용도 방향" [ref=e1119]:
+                    - columnheader "포트" [ref=e1120]
+                    - columnheader "프로토콜" [ref=e1121]
+                    - columnheader "용도" [ref=e1122]
+                    - columnheader "방향" [ref=e1123]
+                - rowgroup [ref=e1124]:
+                  - row "9000 TCP VNC/RFB 원격 접속 인바운드" [ref=e1125]:
+                    - cell "9000" [ref=e1126]:
+                      - strong [ref=e1127]: "9000"
+                    - cell "TCP" [ref=e1128]
+                    - cell "VNC/RFB 원격 접속" [ref=e1129]
+                    - cell "인바운드" [ref=e1130]
+                  - row "8554 TCP RTSP 스트리밍 출력 인바운드" [ref=e1131]:
+                    - cell "8554" [ref=e1132]:
+                      - strong [ref=e1133]: "8554"
+                    - cell "TCP" [ref=e1134]
+                    - cell "RTSP 스트리밍 출력" [ref=e1135]
+                    - cell "인바운드" [ref=e1136]
+                  - row "10000 TCP ONVIF 디바이스 통신 인바운드" [ref=e1137]:
+                    - cell "10000" [ref=e1138]:
+                      - strong [ref=e1139]: "10000"
+                    - cell "TCP" [ref=e1140]
+                    - cell "ONVIF 디바이스 통신" [ref=e1141]
+                    - cell "인바운드" [ref=e1142]
+                  - row "443 TCP hawkBit DDI 업데이트 서버 아웃바운드" [ref=e1143]:
+                    - cell "443" [ref=e1144]:
+                      - strong [ref=e1145]: "443"
+                    - cell "TCP" [ref=e1146]
+                    - cell "hawkBit DDI 업데이트 서버" [ref=e1147]
+                    - cell "아웃바운드" [ref=e1148]
+                  - row "8080 TCP 문서 사이트 (내부) 인바운드" [ref=e1149]:
+                    - cell "8080" [ref=e1150]:
+                      - strong [ref=e1151]: "8080"
+                    - cell "TCP" [ref=e1152]
+                    - cell "문서 사이트 (내부)" [ref=e1153]
+                    - cell "인바운드" [ref=e1154]
+                  - row "8888 TCP MCP 서버 (SSE) 인바운드" [ref=e1155]:
+                    - cell "8888" [ref=e1156]:
+                      - strong [ref=e1157]: "8888"
+                    - cell "TCP" [ref=e1158]
+                    - cell "MCP 서버 (SSE)" [ref=e1159]
+                    - cell "인바운드" [ref=e1160]
+              - generic [ref=e1161]:
+                - generic [ref=e1162]:
+                  - img [ref=e1164]
+                  - text: 방화벽 설정
+                - paragraph [ref=e1167]:
+                  - text: VNC(9000), RTSP(8554), ONVIF(10000), MCP(8888) 포트는
+                  - strong [ref=e1168]: 인바운드
+                  - text: 트래픽을 허용해야 합니다. 보안을 위해 내부 네트워크에서만 접근 가능하도록 방화벽을 설정하고, 외부 접속 시 VPN 사용을 권장합니다.
+              - heading "서드파티 의존성서드파티 의존성에 대한 직접 링크" [level=2] [ref=e1169]:
+                - text: 서드파티 의존성
+                - link "서드파티 의존성에 대한 직접 링크" [ref=e1170] [cursor=pointer]:
+                  - /url: "#서드파티-의존성"
+                  - text: "#"
+              - table [ref=e1171]:
+                - rowgroup [ref=e1172]:
+                  - row "라이브러리 용도 사용 컴포넌트" [ref=e1173]:
+                    - columnheader "라이브러리" [ref=e1174]
+                    - columnheader "용도" [ref=e1175]
+                    - columnheader "사용 컴포넌트" [ref=e1176]
+                - rowgroup [ref=e1177]:
+                  - row "FFmpeg H.264 인코딩/디코딩 MiVnc2RtspServer" [ref=e1178]:
+                    - cell "FFmpeg" [ref=e1179]:
+                      - strong [ref=e1180]: FFmpeg
+                    - cell "H.264 인코딩/디코딩" [ref=e1181]
+                    - cell "MiVnc2RtspServer" [ref=e1182]
+                  - row "LIVE555 RTSP 서버 구현 MiVnc2RtspServer" [ref=e1183]:
+                    - cell "LIVE555" [ref=e1184]:
+                      - strong [ref=e1185]: LIVE555
+                    - cell "RTSP 서버 구현" [ref=e1186]
+                    - cell "MiVnc2RtspServer" [ref=e1187]
+                  - row "libjpeg JPEG 이미지 처리 (Tight 인코딩) MiRcsServer" [ref=e1188]:
+                    - cell "libjpeg" [ref=e1189]:
+                      - strong [ref=e1190]: libjpeg
+                    - cell "JPEG 이미지 처리 (Tight 인코딩)" [ref=e1191]
+                    - cell "MiRcsServer" [ref=e1192]
+                  - row "libyuv RGB→YUV 색상 변환 MiVnc2RtspServer" [ref=e1193]:
+                    - cell "libyuv" [ref=e1194]:
+                      - strong [ref=e1195]: libyuv
+                    - cell "RGB→YUV 색상 변환" [ref=e1196]
+                    - cell "MiVnc2RtspServer" [ref=e1197]
+                  - row "OpenSSL TLS/SSL 암호화 통신 MiRcsServer, MiRcsUpdater" [ref=e1198]:
+                    - cell "OpenSSL" [ref=e1199]:
+                      - strong [ref=e1200]: OpenSSL
+                    - cell "TLS/SSL 암호화 통신" [ref=e1201]
+                    - cell "MiRcsServer, MiRcsUpdater" [ref=e1202]
+                  - row "log-writer 내부 로깅 라이브러리 전체 컴포넌트" [ref=e1203]:
+                    - cell "log-writer" [ref=e1204]:
+                      - strong [ref=e1205]: log-writer
+                    - cell "내부 로깅 라이브러리" [ref=e1206]
+                    - cell "전체 컴포넌트" [ref=e1207]
+                  - row "yaml-cpp YAML 설정 파일 파싱 MiRcsServer (Linux)" [ref=e1208]:
+                    - cell "yaml-cpp" [ref=e1209]:
+                      - strong [ref=e1210]: yaml-cpp
+                    - cell "YAML 설정 파일 파싱" [ref=e1211]
+                    - cell "MiRcsServer (Linux)" [ref=e1212]
+                  - row "zlib 데이터 압축 (ZRLE 인코딩) MiRcsServer" [ref=e1213]:
+                    - cell "zlib" [ref=e1214]:
+                      - strong [ref=e1215]: zlib
+                    - cell "데이터 압축 (ZRLE 인코딩)" [ref=e1216]
+                    - cell "MiRcsServer" [ref=e1217]
+                  - row "onvifcpplib ONVIF 프로토콜 구현 MiVnc2RtspServer" [ref=e1218]:
+                    - cell "onvifcpplib" [ref=e1219]:
+                      - strong [ref=e1220]: onvifcpplib
+                    - cell "ONVIF 프로토콜 구현" [ref=e1221]
+                    - cell "MiVnc2RtspServer" [ref=e1222]
+                  - row "nlohmann/json JSON 직렬화 MiRcsUpdater" [ref=e1223]:
+                    - cell "nlohmann/json" [ref=e1224]:
+                      - strong [ref=e1225]: nlohmann/json
+                    - cell "JSON 직렬화" [ref=e1226]
+                    - cell "MiRcsUpdater" [ref=e1227]
+              - heading "다음 단계다음 단계에 대한 직접 링크" [level=2] [ref=e1228]:
+                - text: 다음 단계
+                - link "다음 단계에 대한 직접 링크" [ref=e1229] [cursor=pointer]:
+                  - /url: "#다음-단계"
+                  - text: "#"
+              - list [ref=e1230]:
+                - listitem [ref=e1231]:
+                  - link "빠른 시작" [ref=e1232] [cursor=pointer]:
+                    - /url: /docs/getting-started/quick-start
+                  - text: "- 설치 및 실행 가이드"
+                - listitem [ref=e1233]:
+                  - link "빌드 방법" [ref=e1234] [cursor=pointer]:
+                    - /url: /docs/dev-guide/build
+                  - text: "- 소스 코드 빌드 방법"
+                - listitem [ref=e1235]:
+                  - link "CI/CD 파이프라인" [ref=e1236] [cursor=pointer]:
+                    - /url: /docs/cicd/overview
+                  - text: "- 자동화 빌드 설정"
+            - generic [ref=e1239]:
+              - text: "태그:"
+              - list [ref=e1240]:
+                - listitem [ref=e1241]:
+                  - link "getting-started" [ref=e1242] [cursor=pointer]:
+                    - /url: /docs/tags/getting-started
+                - listitem [ref=e1243]:
+                  - link "requirements" [ref=e1244] [cursor=pointer]:
+                    - /url: /docs/tags/requirements
+          - navigation "문서 페이지" [ref=e1245]:
+            - link "이전 « 시작하기" [ref=e1246] [cursor=pointer]:
+              - /url: /docs/category/시작하기
+              - generic [ref=e1247]: 이전
+              - generic [ref=e1248]: « 시작하기
+            - link "다음 설치 가이드 »" [ref=e1249] [cursor=pointer]:
+              - /url: /docs/getting-started/installation-guide
+              - generic [ref=e1250]: 다음
+              - generic [ref=e1251]: 설치 가이드 »
+        - list [ref=e1254]:
+          - listitem [ref=e1255]:
+            - link "실행 환경" [ref=e1256] [cursor=pointer]:
+              - /url: "#실행-환경"
+            - list [ref=e1257]:
+              - listitem [ref=e1258]:
+                - link "MiRcsServer (VNC 서버)" [ref=e1259] [cursor=pointer]:
+                  - /url: "#mircsserver-vnc-서버"
+              - listitem [ref=e1260]:
+                - link "MiRcsClient (VNC 클라이언트)" [ref=e1261] [cursor=pointer]:
+                  - /url: "#mircsclient-vnc-클라이언트"
+              - listitem [ref=e1262]:
+                - link "MiVnc2RtspServer (스트리밍 브릿지)" [ref=e1263] [cursor=pointer]:
+                  - /url: "#mivnc2rtspserver-스트리밍-브릿지"
+              - listitem [ref=e1264]:
+                - link "MiRcsUpdater (업데이트 서비스)" [ref=e1265] [cursor=pointer]:
+                  - /url: "#mircsupdater-업데이트-서비스"
+              - listitem [ref=e1266]:
+                - link "MiVncMcpServer / MiVncManagerMcpServer (AI MCP 서버)" [ref=e1267] [cursor=pointer]:
+                  - /url: "#mivncmcpserver--mivncmanagermcpserver-ai-mcp-서버"
+          - listitem [ref=e1268]:
+            - link "개발 환경" [ref=e1269] [cursor=pointer]:
+              - /url: "#개발-환경"
+            - list [ref=e1270]:
+              - listitem [ref=e1271]:
+                - link "Windows 빌드" [ref=e1272] [cursor=pointer]:
+                  - /url: "#windows-빌드"
+              - listitem [ref=e1273]:
+                - link "Linux 빌드" [ref=e1274] [cursor=pointer]:
+                  - /url: "#linux-빌드"
+              - listitem [ref=e1275]:
+                - link "문서 빌드" [ref=e1276] [cursor=pointer]:
+                  - /url: "#문서-빌드"
+          - listitem [ref=e1277]:
+            - link "네트워크 포트" [ref=e1278] [cursor=pointer]:
+              - /url: "#네트워크-포트"
+          - listitem [ref=e1279]:
+            - link "서드파티 의존성" [ref=e1280] [cursor=pointer]:
+              - /url: "#서드파티-의존성"
+          - listitem [ref=e1281]:
+            - link "다음 단계" [ref=e1282] [cursor=pointer]:
+              - /url: "#다음-단계"
+  - contentinfo [ref=e790]:
+    - generic [ref=e791]:
+      - generic [ref=e792]:
+        - generic [ref=e793]:
+          - generic [ref=e794]: 문서
+          - list [ref=e795]:
+            - listitem [ref=e796]:
+              - link "시작하기" [ref=e797] [cursor=pointer]:
+                - /url: /docs/intro
+            - listitem [ref=e798]:
+              - link "아키텍처" [ref=e799] [cursor=pointer]:
+                - /url: /docs/architecture/overview
+            - listitem [ref=e800]:
+              - link "개발 가이드" [ref=e801] [cursor=pointer]:
+                - /url: /docs/dev-guide/setup
+        - generic [ref=e802]:
+          - generic [ref=e803]: 애플리케이션
+          - list [ref=e804]:
+            - listitem [ref=e805]:
+              - link "MiRcsServer" [ref=e806] [cursor=pointer]:
+                - /url: /docs/components/mircs-server/overview
+            - listitem [ref=e807]:
+              - link "MiRcsClient" [ref=e808] [cursor=pointer]:
+                - /url: /docs/components/mircs-client/overview
+            - listitem [ref=e809]:
+              - link "MiVnc2RtspServer" [ref=e810] [cursor=pointer]:
+                - /url: /docs/components/mircs-vnc2rtsp/overview
+            - listitem [ref=e811]:
+              - link "MiRcsUpdater" [ref=e812] [cursor=pointer]:
+                - /url: /docs/components/mircs-updater/overview
+            - listitem [ref=e813]:
+              - link "MiVncMcpServer" [ref=e814] [cursor=pointer]:
+                - /url: /docs/components/mi-vnc-mcp-server/overview
+            - listitem [ref=e815]:
+              - link "MiVncManagerMcpServer" [ref=e816] [cursor=pointer]:
+                - /url: /docs/components/mi-vnc-manager-mcp-server/overview
+        - generic [ref=e817]:
+          - generic [ref=e818]: 개발
+          - list [ref=e819]:
+            - listitem [ref=e820]:
+              - link "CI/CD 파이프라인" [ref=e821] [cursor=pointer]:
+                - /url: /docs/cicd/overview
+            - listitem [ref=e822]:
+              - link "GitLab 저장소(opens in new tab)" [ref=e823] [cursor=pointer]:
+                - /url: http://wish.mirero.co.kr/mirero/project/ros/ros-sw-rcs
+                - text: GitLab 저장소
+                - img "(opens in new tab)" [ref=e824]
+      - generic [ref=e827]: Copyright © 2026 Mirero System. Built with Docusaurus.
