@@ -97,15 +97,12 @@
     </mxGraphModel>
   </diagram>
   <diagram name="페이지-1의 복사본" id="iV4mQ0JzdeGDK20GWQ0m">
-    <mxGraphModel dx="5843" dy="1615" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5965" dy="903" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="YAkDrX-IfElkJ33y-MX0-0" />
         <mxCell id="YAkDrX-IfElkJ33y-MX0-1" parent="YAkDrX-IfElkJ33y-MX0-0" />
         <mxCell id="t1-z-rbXPrmqk_VzpmAG-0" parent="YAkDrX-IfElkJ33y-MX0-1" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=30;" value="Task&lt;div&gt;Orchestrator&lt;/div&gt;" vertex="1">
           <mxGeometry height="300" width="300" x="-1342" y="2275" as="geometry" />
-        </mxCell>
-        <mxCell id="t1-z-rbXPrmqk_VzpmAG-1" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=30;fontColor=#FFFF00;" value="&amp;lt;Main Agent&amp;gt;" vertex="1">
-          <mxGeometry height="30" width="340" x="-1040" y="1730" as="geometry" />
         </mxCell>
         <mxCell id="t1-z-rbXPrmqk_VzpmAG-4" parent="YAkDrX-IfElkJ33y-MX0-1" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=30;" value="Critic" vertex="1">
           <mxGeometry height="300" width="300" x="-1042" y="2900" as="geometry" />
@@ -116,7 +113,7 @@
         <mxCell id="t1-z-rbXPrmqk_VzpmAG-14" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=30;fontColor=#FFFF00;" value="&amp;lt;Sub Agent&amp;gt;" vertex="1">
           <mxGeometry height="30" width="340" x="-1662" y="3235" as="geometry" />
         </mxCell>
-        <mxCell id="t1-z-rbXPrmqk_VzpmAG-16" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=30;" value="&lt;div&gt;요구 사항서 작성&lt;/div&gt;&lt;div&gt;서브 에이전트 조율 진행&lt;/div&gt;" vertex="1">
+        <mxCell id="t1-z-rbXPrmqk_VzpmAG-16" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=30;" value="&lt;div&gt;md 생성 스킬 체이닝 진행&lt;br&gt;요구 사항서 작성&lt;/div&gt;&lt;div&gt;서브 에이전트 조율 진행&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="450" x="-1757" y="2410" as="geometry" />
         </mxCell>
         <mxCell id="t1-z-rbXPrmqk_VzpmAG-18" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=30;" value="변경사항 검토 및&amp;nbsp;&lt;div&gt;md 파일 작성&lt;/div&gt;" vertex="1">
@@ -164,68 +161,50 @@
             <mxPoint x="36" y="5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="N-sShzh4Z_fanVgIliHS-0" parent="YAkDrX-IfElkJ33y-MX0-1" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=30;" value="Task&lt;div&gt;Pipeline&lt;/div&gt;" vertex="1">
-          <mxGeometry height="300" width="300" x="-1340" y="1595" as="geometry" />
-        </mxCell>
-        <mxCell id="N-sShzh4Z_fanVgIliHS-4" edge="1" parent="YAkDrX-IfElkJ33y-MX0-1" style="rounded=0;jumpStyle=arc;jumpSize=10;html=1;strokeColor=#FFFFFF;strokeWidth=2;fontSize=25;startArrow=none;startSize=10;endArrow=block;endFill=0;endSize=10;startFill=0;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1218.5" y="1945" as="sourcePoint" />
-            <mxPoint x="-1219.5" y="2231.7" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="N-sShzh4Z_fanVgIliHS-5" edge="1" parent="YAkDrX-IfElkJ33y-MX0-1" style="rounded=0;jumpStyle=arc;jumpSize=10;html=1;strokeColor=#FFFFFF;strokeWidth=2;fontSize=25;startArrow=none;startSize=10;endArrow=block;endFill=0;endSize=10;startFill=0;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1164.5" y="2230.8" as="sourcePoint" />
-            <mxPoint x="-1168.5" y="1945" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="N-sShzh4Z_fanVgIliHS-6" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=30;" value="md 생성 스킬 체이닝 진행&lt;br&gt;Sub Orchestrator 생성" vertex="1">
-          <mxGeometry height="30" width="450" x="-1760" y="1730" as="geometry" />
-        </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-7" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=30;" value="요구 사항서,&lt;br&gt;md 내용" vertex="1">
           <mxGeometry height="30" width="450" x="-1170" y="2886.8" as="geometry" />
         </mxCell>
-        <mxCell id="N-sShzh4Z_fanVgIliHS-8" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=30;fontColor=#FFFF00;" value="&amp;lt;Sub Agent&amp;gt;" vertex="1">
+        <mxCell id="N-sShzh4Z_fanVgIliHS-8" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=30;fontColor=#FFFF00;" value="&amp;lt;Main Agent&amp;gt;" vertex="1">
           <mxGeometry height="30" width="340" x="-1047.5" y="2395" as="geometry" />
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-25" parent="YAkDrX-IfElkJ33y-MX0-1" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=30;" value="CLAUDE&lt;div&gt;CODE&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="300" width="300" x="-1342" y="935" as="geometry" />
+          <mxGeometry height="300" width="300" x="-1347.5" y="1589" as="geometry" />
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-28" edge="1" parent="YAkDrX-IfElkJ33y-MX0-1" style="rounded=0;jumpStyle=arc;jumpSize=10;html=1;strokeColor=#FFFFFF;strokeWidth=2;fontSize=25;startArrow=none;startSize=10;endArrow=block;endFill=0;endSize=10;startFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1191.83" y="1275" as="sourcePoint" />
-            <mxPoint x="-1192.83" y="1561.6999999999998" as="targetPoint" />
+            <mxPoint x="-1197.33" y="1929" as="sourcePoint" />
+            <mxPoint x="-1198.33" y="2215.7" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-31" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;whiteSpace=wrap;fontSize=30;align=center;" value="batch script 실행" vertex="1">
-          <mxGeometry height="60" width="320" x="-2250" y="1655" as="geometry" />
+          <mxGeometry height="60" width="320" x="-2255.5" y="2309" as="geometry" />
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-32" parent="YAkDrX-IfElkJ33y-MX0-1" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=30;" value="RUNNER" vertex="1">
-          <mxGeometry height="300" width="300" x="-2240" y="665" as="geometry" />
+          <mxGeometry height="300" width="300" x="-2245.5" y="1319" as="geometry" />
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-33" parent="YAkDrX-IfElkJ33y-MX0-1" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=30;" value="Git&lt;br&gt;Hooks" vertex="1">
-          <mxGeometry height="300" width="300" x="-2240" y="1325" as="geometry" />
+          <mxGeometry height="300" width="300" x="-2245.5" y="1979" as="geometry" />
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-34" edge="1" parent="YAkDrX-IfElkJ33y-MX0-1" style="rounded=0;jumpStyle=arc;jumpSize=10;html=1;strokeColor=#FFFFFF;strokeWidth=2;fontSize=25;startArrow=none;startSize=10;endArrow=block;endFill=0;endSize=10;startFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1870" y="835" as="sourcePoint" />
-            <mxPoint x="-1390" y="1015" as="targetPoint" />
+            <mxPoint x="-1875.5" y="1489" as="sourcePoint" />
+            <mxPoint x="-1395.5" y="1669" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-35" edge="1" parent="YAkDrX-IfElkJ33y-MX0-1" style="rounded=0;jumpStyle=arc;jumpSize=10;html=1;strokeColor=#FFFFFF;strokeWidth=2;fontSize=25;startArrow=none;startSize=10;endArrow=block;endFill=0;endSize=10;startFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1850" y="1425" as="sourcePoint" />
-            <mxPoint x="-1407" y="1195" as="targetPoint" />
+            <mxPoint x="-1855.5" y="2079" as="sourcePoint" />
+            <mxPoint x="-1412.5" y="1849" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-36" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;whiteSpace=wrap;fontSize=30;align=center;" value="batch script 실행" vertex="1">
-          <mxGeometry height="60" width="320" x="-2250" y="585" as="geometry" />
+          <mxGeometry height="60" width="320" x="-2255.5" y="1239" as="geometry" />
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-37" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;whiteSpace=wrap;fontSize=50;align=center;" value="OR" vertex="1">
-          <mxGeometry height="60" width="320" x="-2250" y="1115" as="geometry" />
+          <mxGeometry height="60" width="320" x="-2255.5" y="1769" as="geometry" />
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-40" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;whiteSpace=wrap;fontSize=30;align=left;" value="&lt;스킬을 호출해 .md 파일을 작성&gt; &#xa;명령" vertex="1">
-          <mxGeometry height="60" width="482" x="-1822" y="1075" as="geometry" />
+          <mxGeometry height="60" width="482" x="-1827.5" y="1729" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

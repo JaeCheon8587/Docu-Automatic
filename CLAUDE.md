@@ -28,66 +28,60 @@ git push (제품 레포) → CI → AI .md 생성 (테마 순회) → docs-auto 
 |------|------|------|
 | L0 | `00.README.md` | 엔트리포인트 — 30초 전체 파악 |
 | L1 | `01.설계-결정사항.md` | WHY+WHAT — 설계 결정과 근거 |
-| L2 | `02.아키텍처.md` | HOW (상세) — 에이전트/스킬 구현 설계 v3 |
+| L2 | `02.아키텍처.md` | HOW (상세) — 에이전트/스킬 구현 설계 v4 |
 | L3 | `03.SETUP-GUIDE.md` | HOW (실행) — 인프라 설치/운영 |
 
-## 아키텍처 핵심 (v3)
+## 아키텍처 핵심 (v4)
 
-### 2단계 오케스트레이션
+### 1단계 오케스트레이션
 
-- **메인 (task-pipeline)**: 테마 루프 관리 + 작업 오케스트레이션 생성/폐기 + 상태 추적 (execution-log.md)
-- **작업 오케스트레이션**: 테마별 4단계 사이클 처리 (판단 → md 작성 → 검증 → 재시도 판정)
+Main CLI가 `skills/task-pipeline/SKILL.md`를 읽고 직접 실행:
+- 테마 루프 관리 + 판단 + 요구사항서 + Agent 위임 + 재시도 + 저장 + 상태 추적 (execution-log.md)
+- docu-writer/critic은 Level 1 Agent로 호출 (리프 노드)
+
+```
+Main CLI (Level 0): 테마 루프 + 판단 + 요구사항서 + 오케스트레이션 + 재시도 + 저장
+  |-> docu-writer (Level 1 Agent): md 작성 (리프)
+  |-> critic (Level 1 Agent): 독립 검증 (리프)
+```
 
 ### 테마 순차 순회
 
 **1차 스코프 (4개 테마)**:
-`intro → getting-started/requirements → architecture/overview → architecture/component-diagram`
+`intro -> getting-started/requirements -> architecture/overview -> architecture/component-diagram`
 
-1 테마 = 1 md 파일. 테마 간 독립. 병렬 처리 금지. 테마별 차이는 작업 오케스트레이션이 작성하는 요구사항서의 내용으로 구현.
+1 테마 = 1 md 파일. 테마 간 독립. 병렬 처리 금지. 테마별 차이는 Main이 작성하는 요구사항서의 내용으로 구현.
 
 ### Full Reset 전략
 
-매 테마마다 모든 에이전트(작업 오케스트레이션, docu-writer, critic) 신규 생성. 이전 에이전트 resume 금지.
+매 테마마다 docu-writer, critic 신규 생성. 이전 에이전트 resume 금지.
 근거: 컨텍스트 오염 방지, 절차 준수 안정성, 디버깅 용이성, 토큰 비용 절감 (1.0x vs Resume 1.8~3.6x).
 
 ### 재시도
 
-검증 실패 시 작업 오케스트레이션 내부에서 docu-writer 재호출 (최대 2회). 2회 초과 시 `auto_generated_warning` 태그 부착.
+검증 실패 시 Main 내부에서 docu-writer 재호출 (최대 2회). 2회 초과 시 `auto_generated_warning` 태그 부착.
 3개 테마 연속 FAIL 시 전체 파이프라인 중단.
 
 ## I/O 계약
 
-**메인 → 작업 오케스트레이션 (입력)**:
-
-| 구분 | 항목 |
-|------|------|
-| 메인 전달 | `theme`, `section`, `output_path` |
-| 스킬 지시로 자체 조달 | git diff, theme_definition (theme-definitions.md), 관련 코드 파일 |
-
-**작업 오케스트레이션 → 메인 (반환 5필드)**:
-
-```yaml
-STATUS: PASS | SKIPPED | WARNING | FAIL
-THEME: {theme_id}
-FILE: {output_path}
-SUMMARY: "변경 내용 한 줄 요약"
-MD_CONTENT: |
-  (YAML frontmatter 포함 .md 전체 내용)
-```
+| # | 송신 → 수신 | 데이터 |
+|---|------------|--------|
+| 1 | Main 자체 조달 | git diff (Bash), theme_definition (Read), code_files (Read/Grep/Glob) |
+| 2 | Main → docu-writer | 요구사항서 (YAML) + 관련 코드 + (재시도 시) critic 피드백 |
+| 3 | docu-writer → Main | YAML frontmatter 포함 .md 내용 (문자열) |
+| 4 | Main → critic | md 내용 + theme_definition + 요구사항서 |
+| 5 | critic → Main | result/frontmatter_valid/theme_fitness/critic_feedback (4필드) |
 
 ## 산출물 목록
 
 | # | 파일 | 유형 | 템플릿 | 상태 |
 |---|------|------|--------|------|
-| 1 | `skills/task-pipeline/SKILL.md` | 테마 순회 파이프라인 스킬 | Lite | **완료** |
-| 2 | `skills/task-orchestrator-skill/SKILL.md` | 작업 오케스트레이션 스킬 | Full | **완료** |
-| 3 | `skills/docu-writer-skill/SKILL.md` | md 작성 스킬 | Lite | **완료** |
-| 4 | `skills/critic-skill/SKILL.md` | 검증 스킬 | Lite | **완료** |
-| 5 | `skills/theme-definitions/SKILL.md` | 페이지 단위 테마 정의 (1차: 4개) | — | **완료** |
-| 6 | `agents/task-pipeline.md` | 테마 순회 파이프라인 에이전트 | — | **완료** |
-| 7 | `agents/task-orchestrator.md` | 작업 오케스트레이션 에이전트 | — | **완료** |
-| 8 | `agents/docu-writer.md` | md 작성 에이전트 | — | **완료** |
-| 9 | `agents/critic.md` | 검증 에이전트 | — | **완료** |
+| 1 | `skills/task-pipeline/SKILL.md` | 통합 오케스트레이션 스킬 | Full | **완료** |
+| 2 | `skills/docu-writer-skill/SKILL.md` | md 작성 스킬 | Lite | **완료** |
+| 3 | `skills/critic-skill/SKILL.md` | 검증 스킬 | Lite | **완료** |
+| 4 | `skills/theme-definitions/SKILL.md` | 페이지 단위 테마 정의 (1차: 4개) | — | **완료** |
+| 5 | `agents/docu-writer.md` | md 작성 에이전트 (Level 1 리프) | — | **완료** |
+| 6 | `agents/critic.md` | 검증 에이전트 (Level 1 리프) | — | **완료** |
 
 > 모든 산출물은 `docs-automation/` 하위에 생성.
 
@@ -116,7 +110,7 @@ tools: [Read, Write, Glob, Grep, Bash, Agent]
 ---
 ```
 
-### 스킬 Full Template (오케스트레이션용 — 절차.md, task-orchestrator-skill.md)
+### 스킬 Full Template (오케스트레이션용 — task-pipeline/SKILL.md)
 
 필수 태그: `<Purpose>`, `<Use_When>`, `<Do_Not_Use_When>`, `<Why_This_Exists>`, `<Execution_Policy>`, `<Steps>`, `<Tool_Usage>`, `<Examples>` (Good/Bad+WHY), `<Escalation_And_Stop_Conditions>`, `<Final_Checklist>`
 

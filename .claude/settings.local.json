@@ -11,7 +11,8 @@
       "Bash(ls:*)",
       "Bash(wc:*)",
       "Bash(sed:*)",
-      "Bash(xargs:*)"
+      "Bash(xargs:*)",
+      "mcp__claude_ai_Mermaid_Chart__validate_and_render_mermaid_diagram"
     ]
   }
 }
