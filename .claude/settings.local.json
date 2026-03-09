@@ -12,7 +12,16 @@
       "Bash(wc:*)",
       "Bash(sed:*)",
       "Bash(xargs:*)",
-      "mcp__claude_ai_Mermaid_Chart__validate_and_render_mermaid_diagram"
+      "mcp__claude_ai_Mermaid_Chart__validate_and_render_mermaid_diagram",
+      "Bash(claude:*)",
+      "Bash(for plugin in jdtls-lsp kotlin-lsp csharp-lsp pyright-lsp gopls-lsp rust-analyzer-lsp clangd-lsp lua-lsp php-lsp swift-lsp typescript-lsp)",
+      "Bash(do echo \"=== $plugin ===\")",
+      "Read(//c/Users/cross/.claude/plugins/marketplaces/claude-plugins-official/plugins/$plugin/**)",
+      "Bash(done)",
+      "Bash(\"C:/Users/cross/OneDrive/Desktop/docs-automation/docs-automation/.TestSample/Learn-Spring-main/.pipeline-temp/draft-intro.md\":*)"
     ]
+  },
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true
   }
 }

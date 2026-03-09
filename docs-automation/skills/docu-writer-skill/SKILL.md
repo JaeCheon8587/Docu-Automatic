@@ -43,8 +43,8 @@ docu-writer 에이전트가 이 스킬을 Read로 읽고 따른다.
 | theme | string | theme-definitions의 테마 ID | "getting-started/requirements" |
 | auto_generated | boolean | 항상 true | true |
 | source_files | string[] | 분석한 소스 파일 경로 목록 | ["src/main.cpp"] |
-| last_commit | string | 분석 대상 커밋 해시 (7자) | "a1b2c3d" |
-| generated_at | string | ISO-8601 형식 생성 시각 | "2026-03-05T14:30:00" |
+| last_commit | string | 요구사항서의 last_commit 값을 그대로 사용 | "a1b2c3d" |
+| generated_at | string | 요구사항서의 generated_at 값을 그대로 사용 | "2026-03-05T14:30:00" |
 | auto_generated_warning | string (선택) | 검증 미통과 시 경고 메시지 | "" |
 | tags | string[] (선택) | 검색/분류용 태그 | ["vnc", "rfb"] |
 
@@ -81,10 +81,40 @@ WHY: 필수 필드 누락(sidebar_label, section, source_files, last_commit, gen
 
 ## 코드 분석 방법
 
-- related_files에서 파일 경로 추출 → Read로 전체 읽기
-- key_changes에서 변경 키워드 추출 → Grep으로 관련 코드 검색
-- Glob으로 관련 헤더/인터페이스 파일 탐색
-- **추측 금지**: Read로 확인하지 않은 함수 동작, 클래스 구조를 서술하지 말 것
+단계별 절차:
+
+1. **기준 경로 확인**: 요구사항서의 `target` 필드에서 대상 코드베이스 절대 경로 확인
+2. **related_files 읽기**: `{target}/{related_file}` 형태로 절대 경로 조합 → Read로 소스 코드 읽기
+3. **키워드 탐색**: key_changes/must_cover 키워드로 `{target}` 하위 Grep 검색
+4. **확장 탐색**: Glob으로 관련 헤더/인터페이스 파일 탐색 → 필요 시 Read로 추가 읽기
+5. **추측 금지**: Read로 확인하지 않은 함수 동작, 클래스 구조를 서술하지 말 것
+
+**GOOD** — target + related_files → Read → Grep 확장:
+
+```
+target: "/home/user/project"
+related_files: ["src/main.cpp", "include/server.h"]
+
+1. Read("/home/user/project/src/main.cpp") -> 코드 확인
+2. Read("/home/user/project/include/server.h") -> 헤더 확인
+3. Grep(pattern="VNCServer", path="/home/user/project/src/") -> 추가 참조 파일 발견
+4. Read로 추가 파일 확인 -> 문서 작성
+```
+
+WHY: 실제 코드를 읽고 분석한 결과로 문서를 작성. 정확성 보장.
+
+**BAD** — 요구사항서 텍스트만 보고 추측:
+
+```
+target: "/home/user/project"
+related_files: ["src/main.cpp", "include/server.h"]
+
+1. Read/Grep/Glob 사용 안 함
+2. 요구사항서의 key_changes "VNC 서버 초기화 로직 변경"만 보고 추측으로 서술
+3. "main.cpp에서 VNCServer 클래스를 초기화합니다" <- 실제 코드 미확인
+```
+
+WHY: 코드를 읽지 않으면 실제 구현과 다른 내용을 서술할 위험. critic이 fail 판정하여 불필요한 재시도 발생.
 
 ## GOOD/BAD 예시
 
@@ -151,7 +181,8 @@ WHY: 불필요한 전면 재작성은 새로운 오류 유입 위험. critic이 
 | do_not_cover | 작성 후 반드시 자체 검토하여 해당 내용 제거 |
 | must_cover | 모든 항목이 문서에 포함되었는지 확인 |
 | frontmatter | 9필수 필드 + 타입/규칙 준수 |
-| 코드 분석 | Read/Grep/Glob으로 실제 코드 확인, 추측 금지 |
+| 코드 분석 | target + related_files로 코드 직접 Read, Grep/Glob 확장 탐색, 추측 금지 |
+| 출력 방식 | draft_path에 Write 저장 후 경량 확인서(status + draft_path) 반환. md 문자열 반환 금지 |
 | critic 수정 | 지적 부분만 핀포인트 수정, 전면 재작성 금지 |
 
 <Final_Checklist>
@@ -160,4 +191,7 @@ WHY: 불필요한 전면 재작성은 새로운 오류 유입 위험. critic이 
 - [ ] must_cover 항목이 모두 문서에 포함되었는가?
 - [ ] YAML frontmatter 9필드가 모두 존재하고 타입이 올바른가?
 - [ ] (재시도 시) critic 피드백의 지적사항만 수정하고 나머지는 유지했는가?
+- [ ] target 경로의 related_files를 Read로 직접 읽었는가?
+- [ ] md를 draft_path에 Write 저장했는가? (md 문자열 반환이 아닌 파일 저장)
+- [ ] 경량 확인서(status + draft_path)를 반환했는가?
 </Final_Checklist>

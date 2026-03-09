@@ -23,6 +23,16 @@ critic 에이전트가 이 스킬을 Read로 읽고 따른다.
 - 테마 정의 자체를 수정할 때 -> theme-definitions/SKILL.md 직접 수정
 </Do_Not_Use_When>
 
+## 0단계: md 로드
+
+검증 대상 md는 draft_path에서 Read로 직접 로드한다. prompt에 인라인으로 전달되지 않는다.
+
+```
+Read(draft_path) -> md_content 확보
+```
+
+파일이 없거나 비어있으면 즉시 `result: fail`, `critic_feedback: ["0단계: draft_path 파일 없음 또는 빈 파일"]` 반환.
+
 ## 1단계: Frontmatter 검증
 
 규칙 기반 기계적 검증. 주관적 판단 없이 존재/타입/값만 확인.
@@ -158,7 +168,8 @@ WHY: theme_fitness=fail인데 result=pass로 판정. AND 논리 위반. docu-wri
 
 | 항목 | 핵심 |
 |------|------|
-| 검증 단계 | 1단계(frontmatter, 규칙 기반) -> 2단계(테마 적합성, AI 판단) |
+| md 로드 | draft_path에서 Read로 직접 로드 (인라인 전달 아님) |
+| 검증 단계 | 0단계(md 로드) -> 1단계(frontmatter, 규칙 기반) -> 2단계(테마 적합성, AI 판단) |
 | 판정 방법 | 1단계 9필드 + 2단계 5관점 -> AND 논리로 최종 result |
 | feedback 형식 | "{단계}: 라인 {NN}-{MM}에 {구체적 위반 내용}" |
 | 참조 파일 | skills/theme-definitions/SKILL.md (해당 테마 블록) |
