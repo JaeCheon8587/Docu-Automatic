@@ -18,7 +18,8 @@
       "Bash(do echo \"=== $plugin ===\")",
       "Read(//c/Users/cross/.claude/plugins/marketplaces/claude-plugins-official/plugins/$plugin/**)",
       "Bash(done)",
-      "Bash(\"C:/Users/cross/OneDrive/Desktop/docs-automation/docs-automation/.TestSample/Learn-Spring-main/.pipeline-temp/draft-intro.md\":*)"
+      "Bash(\"C:/Users/cross/OneDrive/Desktop/docs-automation/docs-automation/.TestSample/Learn-Spring-main/.pipeline-temp/draft-intro.md\":*)",
+      "Bash(grep:*)"
     ]
   },
   "enabledPlugins": {

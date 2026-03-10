@@ -65,7 +65,7 @@ Main CLI (Level 0): 테마 루프 + 오케스트레이션 + 재시도 + 저장
 **1차 스코프 (4개 테마)**:
 `intro -> getting-started/requirements -> architecture/overview -> architecture/component-diagram`
 
-1 테마 = 1 md 파일. 테마 간 독립. 병렬 처리 금지. 테마별 차이는 Main이 작성하는 요구사항서의 내용으로 구현.
+1 테마 = 1 md 파일. 테마 간 독립. 병렬 처리 금지. 테마별 차이는 scout가 작성하는 요구사항서의 내용으로 구현.
 
 ### Full Reset 전략
 
@@ -158,5 +158,5 @@ tools: [Read, Write, Glob, Grep, Bash, Agent]
 | OMC 스킬 예시 | `AI Article/oh-my-claudecode-main/skills/*/SKILL.md` |
 | 스킬 작성 표준 | `AI Article/SKILL_Standard_Report.md` |
 | Docusaurus 사이트 구조 | `SW-RCS-Documentation-구조분석.md` |
-| 설계 결정 근거 | `docs-automation/01.설계-결정사항.md` |
-| 상세 구현 설계 | `docs-automation/02.아키텍처.md` |
+| 설계 결정 근거 | `docs-automation/docs/01.설계-결정사항.md` |
+| 상세 구현 설계 | `docs-automation/docs/02.아키텍처.md` |
