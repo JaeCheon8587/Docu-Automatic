@@ -1,0 +1,16 @@
+id: architecture/overview
+name: 제품 아키텍처
+section: architecture
+perspective: "시스템 전체 구조와 모듈 간 관계"
+audience: "신규 팀원, 개발자"
+writing_style: "서술형 — 전체 그림 중심, 다이어그램 포함"
+must_cover:
+  - Mermaid 기반 시스템 전체 구조
+  - Mermaid 기반 모듈 간 관계 및 통신/호출 흐름
+  - 핵심 프로토콜/기술 (해당 시)
+do_not_cover:
+  - "개별 제품 내부 아키텍처 (→ 제품별 tech-spec)"
+  - "설정 파라미터 (→ config)"
+  - "API 상세 명세 (→ api)"
+docs_path: "docs/architecture/overview.md"
+site_url: "/docs/architecture/overview"

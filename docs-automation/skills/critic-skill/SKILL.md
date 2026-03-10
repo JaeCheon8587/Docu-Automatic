@@ -43,7 +43,7 @@ Read(draft_path) -> md_content 확보
 | 2 | sidebar_label | string | 존재 + 비어있지 않음 |
 | 3 | sidebar_position | number | 존재 + 숫자 타입 |
 | 4 | section | string | 존재 + 비어있지 않음 |
-| 5 | theme | string | theme-definitions/SKILL.md에 정의된 테마 ID 중 하나 |
+| 5 | theme | string | skills/theme-definitions/themes/ 디렉토리에 .yaml 파일이 존재하는 테마 ID |
 | 6 | auto_generated | boolean | 존재 + true |
 | 7 | source_files | string[] | 존재 + 최소 1개 항목 |
 | 8 | last_commit | string | 존재 + 비어있지 않음 |
@@ -54,7 +54,7 @@ Read(draft_path) -> md_content 확보
 
 ## 2단계: 테마 적합성 검증
 
-AI 판단 기반. `skills/theme-definitions/SKILL.md`에서 해당 테마 블록을 Read로 읽어 대조.
+AI 판단 기반. `theme_def_path`의 파일을 Read로 읽어 대조.
 
 ### 2-1. perspective 일치
 
@@ -172,7 +172,7 @@ WHY: theme_fitness=fail인데 result=pass로 판정. AND 논리 위반. docu-wri
 | 검증 단계 | 0단계(md 로드) -> 1단계(frontmatter, 규칙 기반) -> 2단계(테마 적합성, AI 판단) |
 | 판정 방법 | 1단계 9필드 + 2단계 5관점 -> AND 논리로 최종 result |
 | feedback 형식 | "{단계}: 라인 {NN}-{MM}에 {구체적 위반 내용}" |
-| 참조 파일 | skills/theme-definitions/SKILL.md (해당 테마 블록) |
+| 참조 파일 | theme_def_path (scout가 저장한 테마 정의) |
 | 최종 result | frontmatter_valid=true AND theme_fitness=pass -> result=pass |
 
 <Final_Checklist>

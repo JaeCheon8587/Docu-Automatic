@@ -1,0 +1,17 @@
+id: getting-started/requirements
+name: 시스템 요구사항
+section: getting-started
+perspective: "설치/실행에 필요한 환경과 조건"
+audience: "설치자, 운영자"
+writing_style: "참조형 — 제품별 테이블, 간결한 설명"
+must_cover:
+  - 실행 환경 (OS, 런타임, 메모리, 권한)
+  - 개발 환경 (Windows/Linux 빌드 도구)
+  - 네트워크 포트 목록 (해당 시)
+  - 서드파티 의존성
+do_not_cover:
+  - "설치 절차 (→ getting-started/installation)"
+  - "사용 방법 (→ getting-started/quick-start)"
+  - "내부 구현 세부사항"
+docs_path: "docs/getting-started/requirements.md"
+site_url: "/docs/getting-started/requirements"

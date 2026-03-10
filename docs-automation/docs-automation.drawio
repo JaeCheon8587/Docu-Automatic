@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2" pages="2">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1" pages="2">
   <diagram name="개요" id="rAXQkVZtpsmcWgCUZOeh">
     <mxGraphModel dx="6532" dy="2418" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -97,7 +97,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="페이지-1의 복사본" id="iV4mQ0JzdeGDK20GWQ0m">
-    <mxGraphModel dx="5965" dy="903" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5843" dy="815" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="YAkDrX-IfElkJ33y-MX0-0" />
         <mxCell id="YAkDrX-IfElkJ33y-MX0-1" parent="YAkDrX-IfElkJ33y-MX0-0" />
@@ -113,7 +113,7 @@
         <mxCell id="t1-z-rbXPrmqk_VzpmAG-14" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=30;fontColor=#FFFF00;" value="&amp;lt;Sub Agent&amp;gt;" vertex="1">
           <mxGeometry height="30" width="340" x="-1662" y="3235" as="geometry" />
         </mxCell>
-        <mxCell id="t1-z-rbXPrmqk_VzpmAG-16" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=30;" value="&lt;div&gt;md 생성 스킬 체이닝 진행&lt;br&gt;요구 사항서 작성&lt;/div&gt;&lt;div&gt;서브 에이전트 조율 진행&lt;/div&gt;" vertex="1">
+        <mxCell id="t1-z-rbXPrmqk_VzpmAG-16" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=30;" value="&lt;div&gt;md 생성 스킬 체이닝 진행&lt;br&gt;&lt;/div&gt;&lt;div&gt;서브 에이전트 조율 진행&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="450" x="-1757" y="2410" as="geometry" />
         </mxCell>
         <mxCell id="t1-z-rbXPrmqk_VzpmAG-18" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=30;" value="변경사항 검토 및&amp;nbsp;&lt;div&gt;md 파일 작성&lt;/div&gt;" vertex="1">
@@ -165,7 +165,7 @@
           <mxGeometry height="30" width="450" x="-1170" y="2886.8" as="geometry" />
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-8" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=30;fontColor=#FFFF00;" value="&amp;lt;Main Agent&amp;gt;" vertex="1">
-          <mxGeometry height="30" width="340" x="-1047.5" y="2395" as="geometry" />
+          <mxGeometry height="30" width="340" x="-1110" y="2264" as="geometry" />
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-25" parent="YAkDrX-IfElkJ33y-MX0-1" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=30;" value="CLAUDE&lt;div&gt;CODE&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="300" width="300" x="-1347.5" y="1589" as="geometry" />
@@ -205,6 +205,30 @@
         </mxCell>
         <mxCell id="N-sShzh4Z_fanVgIliHS-40" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;whiteSpace=wrap;fontSize=30;align=left;" value="&lt;스킬을 호출해 .md 파일을 작성&gt; &#xa;명령" vertex="1">
           <mxGeometry height="60" width="482" x="-1827.5" y="1729" as="geometry" />
+        </mxCell>
+        <mxCell id="3PEg9uMG211tPfdVRL8x-0" parent="YAkDrX-IfElkJ33y-MX0-1" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=30;" value="Scout" vertex="1">
+          <mxGeometry height="300" width="300" x="-597" y="2275" as="geometry" />
+        </mxCell>
+        <mxCell id="3PEg9uMG211tPfdVRL8x-2" edge="1" parent="YAkDrX-IfElkJ33y-MX0-1" style="rounded=0;jumpStyle=arc;jumpSize=10;html=1;strokeColor=#FFFFFF;strokeWidth=2;fontSize=25;startArrow=none;startSize=10;endArrow=block;endFill=0;endSize=10;startFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-988.9980660291892" y="2410.004562387855" as="sourcePoint" />
+            <mxPoint x="-650.9980660291892" y="2411.004562387855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3PEg9uMG211tPfdVRL8x-3" edge="1" parent="YAkDrX-IfElkJ33y-MX0-1" style="rounded=0;jumpStyle=arc;jumpSize=10;html=1;strokeColor=#FFFFFF;strokeWidth=2;fontSize=25;startArrow=none;startSize=10;endArrow=block;endFill=0;endSize=10;startFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-656" y="2464" as="sourcePoint" />
+            <mxPoint x="-990.9980660291892" y="2464.004562387855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3PEg9uMG211tPfdVRL8x-4" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=30;fontColor=#FFFF00;" value="&amp;lt;Sub Agent&amp;gt;" vertex="1">
+          <mxGeometry height="30" width="340" x="-617" y="2604" as="geometry" />
+        </mxCell>
+        <mxCell id="3PEg9uMG211tPfdVRL8x-5" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=30;" value="수행 할 테마 전달" vertex="1">
+          <mxGeometry height="30" width="450" x="-955" y="2489" as="geometry" />
+        </mxCell>
+        <mxCell id="3PEg9uMG211tPfdVRL8x-6" parent="YAkDrX-IfElkJ33y-MX0-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=30;" value="Docu-Writer가 수행할&lt;div&gt;요구사항서 작성&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="450" x="-955" y="2350" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

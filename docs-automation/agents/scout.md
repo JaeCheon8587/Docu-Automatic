@@ -31,7 +31,7 @@ tools: [Read, Write, Grep, Glob, Bash]
 
 **Step 1: 테마 정의 읽기** (A-2)
 
-Read `skills/theme-definitions/SKILL.md` → 전달받은 theme에 해당하는 블록을 추출한다.
+Read `skills/theme-definitions/themes/{normalized_theme}.yaml` → 전체가 해당 테마 정의이다.
 추출 대상: perspective, audience, writing_style, must_cover, do_not_cover, docs_path, section.
 
 theme_definition을 찾을 수 없으면 즉시 fail 반환:
@@ -159,11 +159,11 @@ reason: "theme_definition 미발견: {theme}"
 1. **코드 본문 Read**: Glob/Grep으로 경로만 수집해야 하는데 소스 파일을 Read로 열어 읽음
 2. **절대 경로 기록**: related_files에 절대 경로를 기록 (target 기준 상대 경로 필수)
 3. **무조건 proceed**: 탐색 결과 없이 proceed 반환 (해당 내용이 없으면 skipped)
-4. **theme_definition 추측**: theme-definitions/SKILL.md에 없는 테마를 임의로 정의
+4. **theme_definition 추측**: themes/ 디렉토리에 해당 파일이 없는 테마를 임의로 정의
 </Failure_Modes_To_Avoid>
 
 <Final_Checklist>
-- [ ] skills/theme-definitions/SKILL.md에서 해당 테마 블록을 추출했는가?
+- [ ] skills/theme-definitions/themes/{normalized_theme}.yaml을 Read했는가?
 - [ ] 코드 본문을 Read하지 않고 Glob/Grep으로 경로만 수집했는가?
 - [ ] related_files가 target 기준 상대 경로인가? (절대 경로 아님)
 - [ ] diff 모드/full-scan 모드를 올바르게 분기했는가?

@@ -1,0 +1,14 @@
+id: architecture/component-diagram
+name: 컴포넌트 다이어그램
+section: architecture
+perspective: "S/W별 대략적인 컴포넌트 구성"
+audience: "개발자"
+writing_style: "참조형 — 제품별 컴포넌트 테이블/다이어그램"
+must_cover:
+  - Mermaid 기반 주요 컴포넌트 (라이브러리/모듈 수준)
+  - Mermaid 기반 컴포넌트 간 의존 관계
+do_not_cover:
+  - "클래스/함수 수준 세부사항 (→ 제품별 tech-spec)"
+  - "설정 파라미터 (→ config)"
+docs_path: "docs/architecture/component-diagram.md"
+site_url: "/docs/architecture/component-diagram"
