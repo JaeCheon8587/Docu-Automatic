@@ -17,7 +17,7 @@ tools: [Read, Write, Grep, Glob]
 4개 입력:
 
 1. **req_path** (항상 전달)
-   - 요구사항서 파일 경로 (예: `{target}/.pipeline-temp/req-intro.yaml`)
+   - 요구사항서 파일 경로 (예: `{target}/.pipeline-temp/req-getting-started--intro.yaml`)
    - Read로 로드하여 14필드 파싱: theme, section, perspective, audience, writing_style, must_cover, do_not_cover, key_changes, related_files, output_path, target, last_commit, generated_at, draft_path
 
 2. **target** (항상 전달)
@@ -25,11 +25,11 @@ tools: [Read, Write, Grep, Glob]
    - requirement_spec의 related_files를 이 경로 기준으로 Read/Grep/Glob하여 직접 코드 분석
 
 3. **draft_path** (항상 전달)
-   - 작성한 md를 Write할 파일 경로 (예: `{target}/.pipeline-temp/draft-intro.md`)
+   - 작성한 md를 Write할 파일 경로 (예: `{target}/.pipeline-temp/draft-getting-started--intro.md`)
    - 요구사항서의 draft_path 필드와 동일
 
 4. **feedback_path** (재시도 시만 전달)
-   - critic 피드백 파일 경로 (예: `{target}/.pipeline-temp/feedback-intro.yaml`)
+   - critic 피드백 파일 경로 (예: `{target}/.pipeline-temp/feedback-getting-started--intro.yaml`)
    - Read로 로드하여 critic_feedback 목록 파싱
 </Input_Contract>
 

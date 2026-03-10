@@ -1,6 +1,6 @@
-id: intro
+id: getting-started/intro
 name: 개요
-section: intro
+section: getting-started
 perspective: "프로젝트 전체 소개 — 무엇이고 왜 필요한지"
 audience: "모든 방문자 (신규 팀원, 관리자)"
 writing_style: "서술형 — 평이한 소개, 핵심 정보 테이블 병행"
@@ -13,5 +13,5 @@ do_not_cover:
   - "개별 제품의 상세 기능 명세 (→ 제품별 페이지)"
   - "설치/실행 방법 (→ getting-started)"
   - "내부 구현 세부사항 (→ architecture, tech-spec)"
-docs_path: "docs/intro.md"
-site_url: "/docs/intro"
+docs_path: "docs/getting-started/intro.md"
+site_url: "/docs/getting-started/intro"

@@ -13,7 +13,7 @@ origin: docs-automation
 
 | theme ID | section | 파일 | docs_path |
 |----------|---------|------|-----------|
-| intro | intro | themes/intro.yaml | docs/intro.md |
+| getting-started/intro | getting-started | themes/getting-started--intro.yaml | docs/getting-started/intro.md |
 | getting-started/requirements | getting-started | themes/getting-started--requirements.yaml | docs/getting-started/requirements.md |
 | architecture/overview | architecture | themes/architecture--overview.yaml | docs/architecture/overview.md |
 | architecture/component-diagram | architecture | themes/architecture--component-diagram.yaml | docs/architecture/component-diagram.md |

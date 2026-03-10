@@ -63,7 +63,7 @@ Main CLI (Level 0): 테마 루프 + 오케스트레이션 + 재시도 + 저장
 ### 테마 순차 순회
 
 **1차 스코프 (4개 테마)**:
-`intro -> getting-started/requirements -> architecture/overview -> architecture/component-diagram`
+`getting-started/intro -> getting-started/requirements -> architecture/overview -> architecture/component-diagram`
 
 1 테마 = 1 md 파일. 테마 간 독립. 병렬 처리 금지. 테마별 차이는 scout가 작성하는 요구사항서의 내용으로 구현.
 

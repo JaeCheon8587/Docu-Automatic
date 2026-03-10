@@ -16,15 +16,15 @@ tools: [Read, Write, Grep, Glob, Bash]
 <Input_Contract>
 9 inputs (Main → scout):
 
-1. **theme** (항상) — 테마 ID (예: "intro", "architecture/overview")
-2. **section** (항상) — 섹션 (예: "intro", "getting-started", "architecture")
+1. **theme** (항상) — 테마 ID (예: "getting-started/intro", "architecture/overview")
+2. **section** (항상) — 섹션 (예: "getting-started", "architecture")
 3. **target** (항상) — 대상 코드베이스 경로
 4. **last_commit** (항상) — Phase 1에서 확보한 커밋 해시 또는 "non-git"
 5. **generated_at** (항상) — Phase 1에서 확보한 ISO-8601 타임스탬프
-6. **output_path** (항상) — 최종 출력 경로 (예: "docs/intro.md")
-7. **draft_path** (항상) — 드래프트 저장 경로 (예: "{target}/.pipeline-temp/draft-intro.md")
-8. **req_path** (항상) — 요구사항서 저장 경로 (예: "{target}/.pipeline-temp/req-intro.yaml")
-9. **theme_def_path** (항상) — 테마 정의 저장 경로 (예: "{target}/.pipeline-temp/theme-def-intro.yaml")
+6. **output_path** (항상) — 최종 출력 경로 (예: "docs/getting-started/intro.md")
+7. **draft_path** (항상) — 드래프트 저장 경로 (예: "{target}/.pipeline-temp/draft-getting-started--intro.md")
+8. **req_path** (항상) — 요구사항서 저장 경로 (예: "{target}/.pipeline-temp/req-getting-started--intro.yaml")
+9. **theme_def_path** (항상) — 테마 정의 저장 경로 (예: "{target}/.pipeline-temp/theme-def-getting-started--intro.yaml")
 </Input_Contract>
 
 <Procedure>
@@ -64,7 +64,7 @@ cd {target} && git diff HEAD~1 --name-only
 
 | section | 탐색 전략 (경로 수집만) |
 |---------|----------|
-| `intro` | 프로젝트 루트 파일(README, 설정), 진입점(main), 전체 디렉토리 구조 |
+| `getting-started` (intro) | 프로젝트 루트 파일(README, 설정), 진입점(main), 전체 디렉토리 구조 |
 | `getting-started` | 빌드 설정 파일(CMakeLists.txt, .csproj, package.json), 설정 파일, 네트워크 포트 정의, 의존성 목록 |
 | `architecture` | 프로젝트 구조, 진입점(main), 모듈 간 의존성, 통신 코드, 프로토콜 관련 소스 |
 
