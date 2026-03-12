@@ -1,7 +1,7 @@
 ---
 name: docu-writer
 description: 요구사항서 기반 기술 문서(.md) 작성 에이전트 (리프 노드)
-model: sonnet
+model: opus
 tools: [Read, Write, Grep, Glob]
 ---
 

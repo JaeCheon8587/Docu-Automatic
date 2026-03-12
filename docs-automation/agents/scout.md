@@ -1,7 +1,7 @@
 ---
 name: scout
 description: 테마별 코드베이스 탐색 + 판단 + 요구사항서 작성 에이전트 (리프 노드)
-model: sonnet
+model: haiku
 tools: [Read, Write, Grep, Glob, Bash]
 ---
 
